@@ -1,0 +1,376 @@
+@import 'normalize.styl'
+@import "fonts.styl"
+
+*
+	padding 0
+a
+	text-decoration none
+	color #00709f
+body
+	background #cae0f1
+img
+	border-radius 5%
+h1
+	color #656565
+	font-size 1.5em
+	text-align center
+ul
+	list-style none
+	margin 0
+li
+	text-align left
+strong
+	color white
+	
+footer
+	font-size 12px
+	color #90aabf
+	a
+		color #90aabf
+header
+	display inline-block
+	.logo
+		float left
+		img
+			width 200px
+			height auto
+	.contenido_superior
+		position absolute
+		right 50px
+		h1
+			display none
+			margin 0 60px
+		.search
+			background url("../img/search.png") no-repeat
+			width 271px
+			height 42px
+			margin 61px -29px 0px 0px
+			padding 0
+
+			form
+				.search_text
+					font-size 11px
+					width 180px
+					height 15px
+					margin 8px 5px 10px 30px
+				.buttom-search
+					margin 2px 3px 3px 4px
+					color white
+.content
+	background #f3f3f3
+	margin 0px 20px
+	padding 5px 0 0 0
+	.post_body
+		display inline-block
+		.publicidad
+			margin 10px 0 30px 0
+		.recomendados
+			.recomendados_titulo
+				color #656565
+				font-size 18px
+		.ultimos
+			.ultimos_titulo
+				color #656565
+				font-size 18px
+				padding 10px 0 10px 5px
+
+	.sidebar
+		display inline-block
+		border-radius 5px
+		background rgba(0, 161, 252, 1)
+		display inline-block
+		font-size 1.5em
+		width 100%
+		height 100%
+		color #f3f3f3
+		.categorias
+			ul
+				li
+					text-align center
+					background #0029FF
+					border-bottom: 1px solid #0788cb
+					a
+						color #f3f3f3
+
+.populares_titulo
+	color white
+	font-size 18px
+	padding 15px 0 0 5px
+	
+.juegos_populares
+	background #01A9DB
+	border-radius 8px
+	margin 0px 20px
+
+.juegos_aleatorios
+	background rgba(white, .5)
+	margin 0px 20px
+	padding 5px 0 0 0
+
+.games
+	display inline-block
+	background white
+	margin 2px
+	padding 0 0 2px 0
+	border-radius 5%
+	&:last-child
+		margin-bottom 20px
+.gametitle
+	margin -8px -2px -4px -2px
+	a
+		font-size 12px
+.thumb
+	display inline-block
+	text-align center
+	margin 5px
+	padding 0
+	top 10px
+	img
+		border 1px solid #646464
+
+.facebook
+	display none
+
+.center
+	text-align center
+
+
+@media screen and (min-width:480px)
+
+	strong
+		margin 10px 0
+	.header
+		.logo
+			img
+				width 300px
+				height auto
+		.contenido_superior
+			.search
+				margin 79px -29px 0 0
+			
+	.content
+		.sidebar
+			.categorias
+				ul
+					li
+						display inline-block
+						width 200px
+	.juegos_populares
+		.games
+			&:nth-child(11n)
+				display none
+	.juegos_populares
+		.games
+			&:nth-child(12n)
+				display none
+
+	.juegos_aleatorios
+		.games
+			&:nth-child(11n)
+				display none
+	.juegos_aleatorios
+		.games
+			&:nth-child(12n)
+				display none
+
+	.sidebar
+		padding 0 0 10px 0
+
+@media screen and (min-width:754px)
+	.juegos_populares
+		.games
+			&:nth-child(11n)
+				display none
+	.juegos_populares
+		.games
+			&:nth-child(12n)
+				display none
+	.juegos_populares
+		.games
+			&:nth-child(13n)
+				display none
+	.juegos_populares
+		.games
+			&:nth-child(14n)
+				display none
+
+	.juegos_aleatorios
+		.games
+			&:nth-child(11n)
+				display none
+	.juegos_aleatorios
+		.games
+			&:nth-child(12n)
+				display none
+	.juegos_aleatorios
+		.games
+			&:nth-child(13n)
+				display none
+	.juegos_aleatorios
+		.games
+			&:nth-child(14n)
+				display none
+
+	.recomendados
+		.games
+			&:nth-child(11n)
+				display none
+	.recomendados
+		.games
+			&:nth-child(12n)
+				display none
+
+	.ultimos
+		.games
+			&:nth-child(11n)
+				display none
+	.ultimos
+		.games
+			&:nth-child(12n)
+				display none
+
+@media screen and (min-width:893px)
+	.juegos_populares
+		.games
+			&:nth-child(11n)
+				display inline-block
+	.juegos_populares
+		.games
+			&:nth-child(12n)
+				display inline-block
+	.juegos_aleatorios
+		.games
+			&:nth-child(11n)
+				display inline-block
+	.juegos_aleatorios
+		.games
+			&:nth-child(12n)
+				display inline-block
+	.recomendados
+		.games
+			&:nth-child(11n)
+				display inline-block
+	.recomendados
+		.games
+			&:nth-child(12n)
+				display inline-block
+
+	.ultimos
+		.games
+			&:nth-child(11n)
+				display inline-block
+	.ultimos
+		.games
+			&:nth-child(12n)
+				display inline-block
+
+@media screen and (min-width:1024px)
+	body
+		width 1024px
+		margin 0 auto
+
+	.header
+		.contenido_superior
+			float right
+			margin 16px 0 -5000px 350px
+			position inherit
+			.search
+				margin 22px -29px 0 0
+			h1
+				display inline
+
+	.izquierda
+		text-align left
+		margin 5px 10px
+	.content
+		text-align left
+		padding 25px 20px 25px 8px
+		.post_body
+			width 82%
+			.recomendados
+				.games
+					background transparent
+					margin -4px
+			.ultimos
+				.games
+					background transparent
+					margin -4px
+		.sidebar
+			vertical-align top
+			width 17%
+			font-size 13px
+			font-weight bold
+			text-align center
+			background #0384c7
+			.categorias_titulo
+				font-size 16px
+				padding 7px 0 7px 10px
+				background url(../img/categorias.gif) no-repeat
+				width 130px
+				border-radius 14%
+			.categorias
+				width 100%
+				ul
+					margin 0 16px 8px 5px
+					li
+						width 100%
+						margin 0
+						padding 8px 2px 8px 10px
+						background #0029FF
+						border-bottom 1px solid #0788cb
+
+	.games
+		margin 0
+		text-align center
+
+	.juegos_populares
+		.games
+			&:nth-child(11n)
+				display inline-block
+	.juegos_populares
+		.games
+			&:nth-child(12n)
+				display inline-block
+	.juegos_populares
+		.games
+			&:nth-child(13n)
+				display inline-block
+	.juegos_populares
+		.games
+			&:nth-child(14n)
+				display inline-block
+
+	.juegos_aleatorios
+		.games
+			&:nth-child(11n)
+				display inline-block
+	.juegos_aleatorios
+		.games
+			&:nth-child(12n)
+				display inline-block
+	.juegos_aleatorios
+		.games
+			&:nth-child(13n)
+				display inline-block
+	.juegos_aleatorios
+		.games
+			&:nth-child(14n)
+				display inline-block
+
+	.recomendados
+		.games
+			&:nth-child(11n)
+				display inline-block
+	.recomendados
+		.games
+			&:nth-child(12n)
+				display inline-block
+
+	.ultimos
+		.games
+			&:nth-child(11n)
+				display inline-block
+	.ultimos
+		.games
+			&:nth-child(12n)
+				display inline-block
